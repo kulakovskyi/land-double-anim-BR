@@ -39,13 +39,6 @@ body
   z-index: 70
 
 
-  //picture
-  //  source(media="(max-width: 600px) and (orientation: portrait)" srcset="img/scarf-mob.png")
-  //  source(media="(max-width: 920px) and (orientation: landscape) and (max-height: 450px)" srcset="img/scarf-mob.png")
-  //  source(media="(min-width: 601px) and (max-width: 1024px) and (orientation: portrait)" srcset="img/scarf-tab.png")
-  //  source(media="(min-width: 601px) and (orientation: landscape)" srcset="img/scarf-desc.png")
-  //  img(src="img/scarf-desc.png" alt="Favbet")
-
 .bonus
   width: 100%
   height: 100%
@@ -62,6 +55,14 @@ body
     background: #005 url("../img/bg-mob.jpg") no-repeat 50% 0/cover
   @media (max-width: 920px) and (orientation: landscape) and (max-height: 450px)
     background: #005 url("../img/bg-landscape.jpg") no-repeat 50% 0/cover
+  &__line
+    position: absolute
+    bottom: 0
+    right: 0
+    width: 307px
+    height: 869px
+    background: url("../img/line.svg") no-repeat 50% 0/contain
+
   &__logo
     position: absolute
     z-index: 3
@@ -154,7 +155,7 @@ body
   &__txt
     position: absolute
     z-index: 2
-    right: 65px
+    left: 48%
     bottom: 210px
     font-family: $font-suisse-semb
     font-size: 80px
