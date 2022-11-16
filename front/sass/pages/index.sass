@@ -57,10 +57,11 @@ body
     background: #005 url("../img/bg-landscape.jpg") no-repeat 50% 0/cover
   &__line
     position: absolute
-    bottom: 0
-    right: 0
-    width: 307px
-    height: 869px
+    display: inline-block
+    bottom: -1px
+    right: -4px
+    width: 391px
+    height: 1074px
     background: url("../img/line.svg") no-repeat 50% 0/contain
 
   &__logo
@@ -146,7 +147,7 @@ body
     line-height: 40px
     letter-spacing: 0.08em
     text-transform: uppercase
-    padding: 24px 93px 22px
+    padding: 24px 50px 22px
     color: #000055
     background: #05C489
     border-radius: 6px
@@ -155,8 +156,8 @@ body
   &__txt
     position: absolute
     z-index: 2
-    left: 48%
-    bottom: 210px
+    right: 21%
+    bottom: 195px
     font-family: $font-suisse-semb
     font-size: 80px
     line-height: 100px
@@ -251,7 +252,7 @@ body
     top: -8px
     transform: translateY(-50px)
     background: url("../img/plus-all.svg") no-repeat 50% 0/contain
-    animation: 3s plus1 ease
+    animation: 6s plus1 ease infinite
     animation-delay: 1.4s
     animation-fill-mode: forwards
   &__plus2
@@ -262,9 +263,9 @@ body
     bottom: 50px
     transform: translateY(50px)
     background: url("../img/plus-all.svg") no-repeat 50% 0/contain
-    animation: 3s plus2 ease
+    animation: 6s plus2 ease infinite
     animation-delay: 1s
-    animation-fill-mode: forwards
+
   &__footer
     position: absolute
     bottom: -1px
@@ -340,7 +341,7 @@ body
   0%
     transform: translate(0, 0)
   50%
-    transform: translate(0px, 0px)
+    transform: translate(15px, -15px)
   100%
     transform: translate(0, 0)
 
@@ -371,18 +372,25 @@ body
 @keyframes plus1
   0%
     transform: translateY(-50px)
-  100%
+  50%
     transform: translateY(0)
+  100%
+    transform: translateY(-50px)
+
 
 @keyframes plus2
   0%
     transform: translateY(50px)
-  100%
+  50%
     transform: translateY(0)
+  100%
+    transform: translateY(50px)
 
 
 @keyframes plus1-tab
   0%
     transform: rotate(90deg) translateX(-50px)
-  100%
+  50%
     transform: rotate(90deg) translateX(0)
+  100%
+    transform: rotate(90deg) translateX(-50px)
